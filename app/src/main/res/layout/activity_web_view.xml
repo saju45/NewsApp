@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebViewActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="0dp"
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#03A9F4"
+                android:textSize="20sp"
+                android:text="Specific News "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

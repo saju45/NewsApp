@@ -9,8 +9,7 @@ import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
 
-    private val apiKey:String="42a9dd92bfc144f6ba69c1e5c06a1bcc"
-
+   // private val apiKey:String="42a9dd92bfc144f6ba69c1e5c06a1bcc"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

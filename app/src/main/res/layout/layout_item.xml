@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:padding="10dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/header"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="main heading display here"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+                <TextView
+                    android:text=" main content"
+                    android:textSize="15sp"
+                    android:id="@+id/content"
+                    android:maxLines="6"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:scaleType="centerCrop"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:padding="5dp"
+                android:textColor="@color/purple_200"
+                android:id="@+id/author"
+                android:textStyle="italic"
+                android:textSize="13sp"
+                android:text="By shanwaj hossain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/publishAt"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:text="publish date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.example.model
+package com.example.newsapp.model
 
 data class MainNewsModel(
     val status:String?="",
